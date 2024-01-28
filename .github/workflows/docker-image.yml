@@ -26,9 +26,11 @@ jobs:
     - name: Build docker image
       run: | 
          docker build -t aramirezm89/docker-cruso-graphql-app:0.0.2 .
+         docker build -t aramirezm89/docker-cruso-graphql-app:latest .
     - name:  Push docker image
       run: |
         docker push aramirezm89/docker-cruso-graphql-app:0.0.2
+        docker push aramirezm89/docker-cruso-graphql-app:latest
       
      
     # - name: Build the Docker image
