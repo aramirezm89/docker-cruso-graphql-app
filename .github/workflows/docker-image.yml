@@ -32,7 +32,7 @@ jobs:
         NEW_VERSION : ${{steps.version.outputs.version}}
       run : |
        docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-       echo "NEW VERSIOn : $NEW_VERSION !!!
+       echo "NEW VERSIOn : $NEW_VERSION !!!"
     # - name: Build docker image
     #   run: | 
     #      docker build -t aramirezm89/docker-cruso-graphql-app:0.0.2 .
